@@ -35,7 +35,7 @@ export default function App() {
     return tourList.map((tour) => (
       <div className="single-tour" key={tour.id}>
         <h2 className="title">{tour.name}</h2>
-        <div className="tour-info">
+        <div className="tour-info tour-price">
           {showAllInfo ? (
             <p>{tour.info}</p>
           ) : (
